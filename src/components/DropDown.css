@@ -1,0 +1,16 @@
+/* dropdown */
+li:hover .icon{
+visibility: visible;
+}
+/* image slider zooming */
+
+.img-zooming{
+    transform: scale(1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#yl-main-slider .owl-item.active .img-zooming{
+transform: scale(1.15);
+transition: all 700ms linear;
+}
