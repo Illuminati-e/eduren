@@ -100,7 +100,7 @@ div#yl-preloader {
   transition: all 0.3s;
   overflow: visible;
   background-color: #fff;
-  background: #fff url("../img/pre.svg") no-repeat center center;
+  background: #fff url("../images/pre.svg") no-repeat center center;
 }
 
 [data-background] {
@@ -258,12 +258,12 @@ select:visited {
   color: #fff;
 }
 
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn, .yl-newslatter-content .yl-newslatter-form button, .yl-registration-content-2 .registration-text-2 a, .yl-registration-text-wrap a, .yl-popular-course-section .yl-popular-course-btn, .yl-course-more-btn, .yl-department-section .yl-department-btn, .banner-search-select button, .yl-banner-text .yl-banner-btn a, .slider-main-item .slider-main-text .slider-main-btn a {
+ .footer-logo-btn, .yl-newslatter-content .yl-newslatter-form button, .yl-registration-content-2 .registration-text-2 a, .yl-registration-text-wrap a, .yl-popular-course-section .yl-popular-course-btn, .yl-course-more-btn, .yl-department-section .yl-department-btn, .banner-search-select button, .yl-banner-text .yl-banner-btn a, .slider-main-item .slider-main-text .slider-main-btn a {
   z-index: 1;
   overflow: hidden;
   position: relative;
 }
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn:after, .yl-newslatter-content .yl-newslatter-form button:after, .yl-registration-content-2 .registration-text-2 a:after, .yl-registration-text-wrap a:after, .yl-popular-course-section .yl-popular-course-btn:after, .yl-course-more-btn:after, .yl-department-section .yl-department-btn:after, .banner-search-select button:after, .yl-banner-text .yl-banner-btn a:after, .slider-main-item .slider-main-text .slider-main-btn a:after {
+ .footer-logo-btn:after, .yl-newslatter-content .yl-newslatter-form button:after, .yl-registration-content-2 .registration-text-2 a:after, .yl-registration-text-wrap a:after, .yl-popular-course-section .yl-popular-course-btn:after, .yl-course-more-btn:after, .yl-department-section .yl-department-btn:after, .banner-search-select button:after, .yl-banner-text .yl-banner-btn a:after, .slider-main-item .slider-main-text .slider-main-btn a:after {
   top: 0;
   width: 0;
   left: -40%;
@@ -276,7 +276,7 @@ select:visited {
   transform-origin: top left;
   background-color: #FFA602;
 }
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn:hover:after, .yl-newslatter-content .yl-newslatter-form button:hover:after, .yl-registration-content-2 .registration-text-2 a:hover:after, .yl-registration-text-wrap a:hover:after, .yl-popular-course-section .yl-popular-course-btn:hover:after, .yl-course-more-btn:hover:after, .yl-department-section .yl-department-btn:hover:after, .banner-search-select button:hover:after, .yl-banner-text .yl-banner-btn a:hover:after, .slider-main-item .slider-main-text .slider-main-btn a:hover:after {
+ .footer-logo-btn:hover:after, .yl-newslatter-content .yl-newslatter-form button:hover:after, .yl-registration-content-2 .registration-text-2 a:hover:after, .yl-registration-text-wrap a:hover:after, .yl-popular-course-section .yl-popular-course-btn:hover:after, .yl-course-more-btn:hover:after, .yl-department-section .yl-department-btn:hover:after, .banner-search-select button:hover:after, .yl-banner-text .yl-banner-btn a:hover:after, .slider-main-item .slider-main-text .slider-main-btn a:hover:after {
   height: 100%;
   width: 150%;
 }
@@ -848,7 +848,7 @@ select:visited {
   top: 100%;
   width: 100%;
   height: 560px;
-  background-image: url(../img/waves-shape.png);
+  /* background-image: url(../img/waves-shape.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1329,7 +1329,7 @@ select:visited {
   display: none;
 }
 #yl-main-slider .owl-dots {
-  left: 5%;
+  left: 1%;
   top: 50%;
   position: absolute;
   transform: translateY(-50%) rotate(90deg);
@@ -1340,7 +1340,7 @@ select:visited {
   cursor: pointer;
   position: relative;
   border-radius: 100%;
-  margin-bottom: 10px;
+  margin: 5px;
   border: 2px solid #eaeaea;
   transition: 0.3s all ease-in-out;
 }
@@ -2305,10 +2305,10 @@ select:visited {
 /*---------------------------------------------------- */
 /*Department area*/
 /*----------------------------------------------------*/
-.yl-department-section {
+/* .yl-department-section {
   padding: 95px 0px 100px;
   background-color: #f9f8f8;
-}
+} */
 .yl-department-section .yl-department-content {
   padding-top: 35px;
 }
@@ -2480,7 +2480,7 @@ select:visited {
 }
 #yl-department-slider-id .owl-nav {
   right: 0;
-  top: -110px;
+  top: -150px;
   position: absolute;
 }
 #yl-department-slider-id .owl-nav .owl-next,
@@ -3874,7 +3874,7 @@ select:visited {
   opacity: 0.1;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url(../img/cd-bg.jpg);
+  /* background-image: url(../img/cd-bg.jpg); */
 }
 .yl-registration-section:after {
   top: 0;
@@ -3887,7 +3887,7 @@ select:visited {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../img/cd-bg2.png);
+  /* background-image: url(../img/cd-bg2.png); */
 }
 
 .yl-registration-countdown {
@@ -3994,7 +3994,7 @@ select:visited {
   height: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url(../img/r-bg.png);
+  /* background-image: url(../img/r-bg.png); */
 }
 .yl-registration-content-2 .registration-side-img {
   right: 0;
@@ -5597,7 +5597,7 @@ select:visited {
 }
 #yl-instructor-slider .owl-nav {
   right: 0;
-  top: -60px;
+  top: -128px;
   cursor: pointer;
   position: absolute;
 }
@@ -6410,7 +6410,7 @@ select:visited {
   color: #9d9d9d;
   padding-bottom: 35px;
 }
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn {
+ .footer-logo-btn {
   color: #fff;
   height: 35px;
   width: 100px;
@@ -6422,10 +6422,10 @@ select:visited {
   background-color: #FFA602;
   transition: 0.3s all ease-in-out;
 }
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn:after {
+.footer-logo-btn:after {
   background-color: #fff;
 }
-.yl-footer-widget .yl-footer-logo-widget .footer-logo-btn:hover {
+ .footer-logo-btn:hover {
   color: #000;
 }
 .yl-footer-widget .yl-footer-newslatter-widget p {
@@ -6557,7 +6557,7 @@ select:visited {
 .yl-footer-section-2 .yl-footer-content-wrap {
   padding-top: 80px;
 }
-.yl-footer-section-2 .yl-footer-widget .yl-footer-logo-widget .footer-logo-btn {
+ .footer-logo-btn {
   border-radius: 30px;
   background-color: #FFA602;
 }

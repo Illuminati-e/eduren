@@ -1,28 +1,11 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa'
 import DropDown from './DropDown'
-const SubNavbar = () => {
+const SubNavbar = ({ sticky }) => {
     //drop down links 
     const dropDownLinks = [{
         title: "Home",
         id: 1,
-        Links: [{
-            id: 1,
-            name: "Home page 1",
-            link: "",
-        }, {
-            id: 2,
-            name: "Home page 2",
-            link: "",
-        }, {
-            id: 3,
-            name: "Home page 3",
-            link: "",
-        }, {
-            id: 4,
-            name: "Home page 4",
-            link: "",
-        }],
     }, {
         title: "About",
         id: 2,
@@ -69,7 +52,7 @@ const SubNavbar = () => {
         )
     }
     return (
-        <div className='justify-evenly border relative p-2 hidden lg:flex'>
+        <div className="sticky top-0 justify-evenly border bg-white z-30  p-2 hidden lg:flex ">
             <div className='flex justify-end  flex-1  space-x-4 mr-10'>
                 {
                     getDropDown()

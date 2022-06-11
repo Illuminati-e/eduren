@@ -6,7 +6,7 @@ const DropDown = ({ title, Links = [] }) => {
         <div className='flex items-center cursor-pointer group p-4 h-auto relative'>
             <h1 className='text-lg font-serif font-semibold'>{title}</h1>
             <FaPlus className='text-yellow-400 font-extralight ml-1' />
-            <span className='h-[3px] bg-yellow-300 group-hover:w-20 w-0  ease-in border border-solid absolute bottom-0 invisible duration-200 group-hover:ease-in group-hover:visible border-yellow-300'></span>
+            <span className='h-[3px] bg-yellow-300 group-hover:w-10 w-0  ease-in border border-solid absolute bottom-0 invisible duration-200 group-hover:ease-in group-hover:visible border-yellow-300'></span>
             {Links.length !== 0 && (<ul className='absolute z-10 bg-white translate-y-5 invisible group-hover:visible ease-linear duration-200 group-hover:translate-y-0 top-[100%] w-[200px] shadow-md border-b-2 border-yellow-400'>
                 {
                     Links.map((link) => (
