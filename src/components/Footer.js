@@ -1,73 +1,7 @@
 import React from 'react'
 import Brand from '../assets/images/logo2.svg'
-import FooterList from './FooterList'
+import { getFooterList } from './allData'
 const Footer = () => {
-    const footerList = [{
-        id: 1,
-        title: "Useful Links:",
-        icons: [{
-            id: 1,
-            title: "Home",
-            icon: "fa-link",
-        },
-        {
-            id: 2,
-            title: "About Us",
-            icon: "fa-link",
-        }, {
-            id: 3,
-            title: "Contact Us",
-            icon: "fa-link",
-        },
-        ]
-    }, {
-        id: 2,
-        title: "Official Info:",
-        icons: [{
-            id: 1,
-            icon: "fa-location-crosshairs",
-            title: "Vatva Ahmedabad, Gujarat"
-        }, {
-            id: 2,
-            icon: "fa-envelope",
-            title: "edurenacademic@gmail.com"
-        }, {
-            id: 3,
-            icon: "fa-phone",
-            title: "8511222507,8488829699"
-        }]
-    }, {
-        id: 3,
-        title: "Products",
-        icons: [{
-            id: 1,
-            title: "Capex Teacher",
-            icon: "fa-link",
-        },
-        {
-            id: 2,
-            title: "VR Tech",
-            icon: "fa-link",
-        }, {
-            id: 3,
-            title: "Capex EduCounsellor",
-            icon: "fa-link",
-        }, {
-            id: 4,
-            title: "Audio Visual Learning",
-            icon: "fa-link",
-        },
-        ]
-
-    }]
-
-    const getFooterList = () => {
-        return (
-            footerList.map((info) => (
-                <FooterList title={info.title} icons={info.icons} key={info.id} />
-            ))
-        )
-    }
     return (
         <div className='bg-gray-800 mt-[100px] p-10 sm:pl-[50px] sm:pr-[50px] sm:pt-[50px]'>
             <div className='flex space-y-7    justify-evenly flex-wrap'>

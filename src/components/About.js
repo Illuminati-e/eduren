@@ -30,10 +30,6 @@ const About = () => {
                         </b> in standard <b>1 to 10</b> in India as <b className='capitalize'>capex teacher</b>, under campaign, <b>"Teacher & Technology at Home"</b> </p>
                         <div className="yl-about-qoute">
                             <span>"We wish to strengthen basic education in our country with proper training and technology"</span>
-                            {/* <div className="yl-quote-author yl-headline">
-                                <h4><a href="#">Robert Yeast</a></h4>
-                                <span>(Vice-Chencellor)</span>
-                            </div> */}
                         </div>
                     </div>
                 </div>

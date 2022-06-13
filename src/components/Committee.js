@@ -1,50 +1,6 @@
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel'
-import CommitteeCollection from './CommitteeCollection'
-import inst1 from '../assets/images/teacher/inst-1.jpg'
-import inst2 from '../assets/images/teacher/inst-2.jpg'
-import inst3 from '../assets/images/teacher/inst-3.jpg'
-import inst4 from '../assets/images/teacher/inst-4.jpg'
-import inst5 from '../assets/images/teacher/inst-5.jpg'
-import inst6 from '../assets/images/teacher/inst-6.jpg'
-import inst7 from '../assets/images/teacher/inst-7.jpg'
-const committeeInfo = [{
-    id: 1,
-    title: "Mrs. Shyamlaben Naik",
-    img: inst1,
-}, {
-    id: 2,
-    title: "Mr. Saurabh Patel",
-    img: inst2,
-}, {
-    id: 3,
-    title: "Dr. Sushil Naik",
-    img: inst3,
-}, {
-    id: 4,
-    title: "Mr. Nirav Nevaskar",
-    img: inst4,
-}, {
-    id: 5,
-    title: "Dr. Himanshu Patel",
-    img: inst5,
-}, {
-    id: 6,
-    title: "Mr. Vatsal Thakkar",
-    img: inst6,
-}, {
-    id: 7,
-    title: "Dr. Madhuri Raval",
-    img: inst7,
-}]
-const getCommitteeInfo = () => {
-    return (
-        committeeInfo.map((info) => (
-            <CommitteeCollection key={info.id} title={info.title} img={info.img} />
-        ))
-    )
-}
-
+import { getCommitteeInfo } from './allData'
 const Committee = () => {
     return (
         <div className='flex flex-col  p-3 sm:p-[100px] yl-department-section'>

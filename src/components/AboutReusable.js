@@ -11,14 +11,6 @@ const AboutReusable = ({ img }) => {
       <div className="yl-video-img text-center">
         <img src={img} alt="Banner" />
       </div>
-      <div className="yl-video-play-btn text-center">
-        <a className="video_box" href="https://www.youtube.com/watch?v=gUYjYEGbxEY">
-          <i className="fas fa-play"></i>
-          <span className="video_btn_border border_wrap-1"></span>
-          <span className="video_btn_border border_wrap-2"></span>
-          <span className="video_btn_border border_wrap-3"></span>
-        </a>
-      </div>
     </div>
   )
 }
