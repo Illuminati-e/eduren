@@ -21,6 +21,7 @@ import CapexTeacher from "../assets/images/Canex Teacher @Home.jpg";
 import ProductsCollection from "./ProductsCollection";
 // Committee
 <<<<<<< HEAD
+<<<<<<< HEAD
 import CommitteeCollection from './CommitteeCollection'
 import inst1 from '../assets/images/teacher/inst-1.jpg'
 import inst2 from '../assets/images/teacher/inst-2.jpg'
@@ -40,6 +41,8 @@ import Accordion from './Accordion'
 
 
 =======
+=======
+>>>>>>> a4d3af74ce2d615cb82a31470c94cff246b49dd8
 import CommitteeCollection from "./CommitteeCollection";
 import inst1 from "../assets/images/teacher/inst-1.jpg";
 import inst2 from "../assets/images/teacher/inst-2.jpg";
@@ -53,7 +56,10 @@ import CapexAboutIcon from "./CapexAboutIcon";
 // Footer
 import FooterList from "./FooterList";
 import CapexwhyIcon from "./CapexwhyIcon";
+<<<<<<< HEAD
 >>>>>>> a4d3af7 (capex teacher and termsandcondition)
+=======
+>>>>>>> a4d3af74ce2d615cb82a31470c94cff246b49dd8
 
 // main navbar collections
 const Icon = [
@@ -524,6 +530,7 @@ const footerList = [
 //function to get footer items
 export const getFooterList = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return (
         footerList.map((info) => (
             <FooterList title={info.title} icons={info.icons} key={info.id} />
@@ -589,8 +596,13 @@ export const getFaqData = () => {
     )
 }
 =======
+=======
+>>>>>>> a4d3af74ce2d615cb82a31470c94cff246b49dd8
 	return footerList.map((info) => (
 		<FooterList title={info.title} icons={info.icons} key={info.id} />
 	));
 };
+<<<<<<< HEAD
 >>>>>>> a4d3af7 (capex teacher and termsandcondition)
+=======
+>>>>>>> a4d3af74ce2d615cb82a31470c94cff246b49dd8
