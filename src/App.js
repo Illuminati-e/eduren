@@ -1,10 +1,13 @@
 import React from 'react'
 import Home from './layouts/Home'
+import { Route, Routes } from 'react-router-dom'
+import ContactUs from './layouts/ContactUs'
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route path='/contactus' element={<ContactUs />} />
+    </Routes>
   )
 }
 

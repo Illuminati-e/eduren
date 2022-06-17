@@ -1,6 +1,7 @@
 import React from 'react'
-
-const FooterList = ({ title, icons }) => {
+import { getFollowUs } from './allData'
+import {Link} from 'react-router-dom';
+const FooterList = ({ title, icons, flag = false }) => {
     return (
         <div className='flex flex-col w-full sm:w-fit '>
             <div className='flex relative mb-5'>
@@ -11,12 +12,12 @@ const FooterList = ({ title, icons }) => {
                 icons.map((info) => (
                     <div key={info.id} className="flex p-1 items-center">
                         <i className={`fa-solid ${info.icon} text-yellow-300`}></i>
-                        <p className='ml-4 text-white'>{info.title}</p>
+                        <Link to={`${info.link}`}> <p id={`${info.link}`} className='ml-4 text-white'>{info.title}</p></Link>
                     </div>
                 ))
             }
-            <div>
-                <p>Follow Us Icons To set</p>
+            <div className='flex items-center mt-4 text-yellow-400'>
+                {flag && getFollowUs()}
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const CommitteeCollection = ({ title, img, wowDelay }) => {
         }).init();
     }, [])
     return (
-        <div className="yl-instructor-img-text text-center position-relative wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <div className="yl-instructor-img-text text-center position-relative wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
             <div className="yl-instructor-img position-relative">
                 <img src={img} alt="Committee Icons" />
             </div>

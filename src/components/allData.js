@@ -4,6 +4,7 @@ import CallIcon from '../assets/images/Call.png'
 import ClockIcon from '../assets/images/Clock.png'
 import PinIcon from '../assets/images/Pin.png'
 import NavLinks from './NavLinks'
+import MobileDropDown from './MobileDropDown'
 // SUB-NAVBAR
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa'
 import DropDown from './DropDown'
@@ -81,34 +82,43 @@ export const getMainNavItems = () => {
 const dropDownLinks = [{
     title: "Home",
     id: 1,
+    path: "/"
 }, {
     title: "About",
     id: 2,
+    path: "/about"
 }, {
     title: "Products",
     id: 3,
+    path: "/",
     Links: [{
         id: 1,
         name: "Capex Teacher",
-        link: ""
+        link: "/capexteacher"
     },
     {
         id: 2,
         name: "VR Tech",
-        link: ""
+        link: "/vrtech"
     }, {
         id: 3,
         name: "Capex EduCounsellor",
-        link: ""
+        link: "/capexeducounsellor"
     }, {
         id: 4,
         name: "Audio Visual Learning",
-        link: ""
+        link: "/audiovisuallearning"
     }]
 },
 {
-    title: "ContactUs",
+    title: "FAQ",
     id: 4,
+    path: "/faq",
+},
+{
+    title: "ContactUs",
+    id: 5,
+    path: "/contactus"
 }
 ]
 
@@ -116,7 +126,14 @@ const dropDownLinks = [{
 export const getDropDown = () => {
     return (
         dropDownLinks.map((dropdown) => (
-            <DropDown key={dropdown.id} title={dropdown.title} Links={dropdown.Links} />
+            <DropDown path={dropdown.path} key={dropdown.id} title={dropdown.title} Links={dropdown.Links} />
+        ))
+    )
+}
+export const getMobileDropDown = () => {
+    return (
+        dropDownLinks.map((dropdown) => (
+            <MobileDropDown path={dropdown.path} key={dropdown.id} title={dropdown.title} Links={dropdown.Links} />
         ))
     )
 }
@@ -297,40 +314,52 @@ export const getIcon = () => {
 }
 
 // footer items
+const iconCollection = [{
+    id: 1,
+    icon: "fa-location-crosshairs",
+    title: "Vatva Ahmedabad, Gujarat"
+}, {
+    id: 2,
+    icon: "fa-envelope",
+    title: "edurenacademic@gmail.com"
+}, {
+    id: 3,
+    icon: "fa-phone",
+    title: "8511222507,8488829699"
+}]
 const footerList = [{
     id: 1,
+    flag: true,
     title: "Useful Links:",
     icons: [{
         id: 1,
         title: "Home",
         icon: "fa-link",
+        link:"/"
     },
     {
         id: 2,
         title: "About Us",
         icon: "fa-link",
-    }, {
+        link:"/about"
+    }, 
+    {
         id: 3,
+        title: "Terms and Condition",
+        icon: "fa-link",
+        link:"/termsandcondition"
+    }, 
+    {
+        id: 4,
         title: "Contact Us",
         icon: "fa-link",
+        link:"/contactus"
     },
     ]
 }, {
     id: 2,
     title: "Official Info:",
-    icons: [{
-        id: 1,
-        icon: "fa-location-crosshairs",
-        title: "Vatva Ahmedabad, Gujarat"
-    }, {
-        id: 2,
-        icon: "fa-envelope",
-        title: "edurenacademic@gmail.com"
-    }, {
-        id: 3,
-        icon: "fa-phone",
-        title: "8511222507,8488829699"
-    }]
+    icons: iconCollection
 }, {
     id: 3,
     title: "Products",
@@ -338,19 +367,23 @@ const footerList = [{
         id: 1,
         title: "Capex Teacher",
         icon: "fa-link",
+        link:"/capexteacher"
     },
     {
         id: 2,
         title: "VR Tech",
         icon: "fa-link",
+        link:"/vrtech"
     }, {
         id: 3,
         title: "Capex EduCounsellor",
         icon: "fa-link",
+        link:"/capexeducounsellor"
     }, {
         id: 4,
         title: "Audio Visual Learning",
         icon: "fa-link",
+        link:"/audiovisuallearning"
     },
     ]
 
@@ -360,7 +393,31 @@ const footerList = [{
 export const getFooterList = () => {
     return (
         footerList.map((info) => (
-            <FooterList title={info.title} icons={info.icons} key={info.id} />
+            <FooterList title={info.title} flag={info.flag} icons={info.icons} key={info.id} />
         ))
     )
 }
+
+// Input fields in contact us 
+
+const inputItems = [{
+    id: 1,
+    value: "fullname",
+    name: "fullname",
+    placeholder: "Your Name",
+    type: "text"
+}]
+
+// contact us symbol
+export const getContactIcons = () => {
+    return (
+        iconCollection.map((icon) => (
+            <div key={icon.id} className="flex items-center  text-2xl ">
+                <i className={`fas ${icon.icon} mr-3 p-3 bg-yellow-400 rounded-lg text-white shadow-md text-center`}></i>
+                <p className='text-3xl font-bold font-sans text-blue-500'>{icon.title}</p>
+            </div>
+        ))
+    )
+}
+
+
