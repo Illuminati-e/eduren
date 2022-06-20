@@ -2,10 +2,12 @@ import React from 'react'
 import { FaPlus, FaRegDotCircle } from 'react-icons/fa'
 import "./DropDown.css"
 import { Link } from 'react-router-dom'
-const DropDown = ({ path, title, Links = [] }) => {
+const DropDown = ({ path = "", title, Links = [] }) => {
     return (
         <div className='flex items-center cursor-pointer group p-4 h-auto relative'>
-            <Link to={path} className='text-lg font-serif font-semibold'>{title}</Link>
+            {
+                path !== "" ? (<Link to={path} className='text-lg font-serif font-semibold'>{title}</Link>) : (<p className='text-lg font-serif font-semibold'>{title}</p>)
+            }
             {Links.length !== 0 && (<FaPlus className='text-yellow-400 font-extralight ml-1' />)}
             <span className='h-[3px] bg-yellow-300 group-hover:w-10 w-0  ease-in border border-solid absolute bottom-0 invisible duration-200 group-hover:ease-in group-hover:visible border-yellow-300'></span>
             {Links.length !== 0 && (<ul className='absolute z-10 bg-white translate-y-5 invisible group-hover:visible ease-linear duration-200 group-hover:translate-y-0 top-[100%] w-[200px] shadow-md border-b-2 border-yellow-400'>

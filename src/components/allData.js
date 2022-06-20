@@ -94,7 +94,7 @@ const dropDownLinks = [{
 }, {
     title: "Products",
     id: 3,
-    path: "/",
+    path: "",
     Links: [{
         id: 1,
         name: "Capex Teacher",
@@ -115,13 +115,23 @@ const dropDownLinks = [{
     }]
 },
 {
-    title: "FAQ",
+    title: "Fees Deposit",
     id: 4,
+    path: "/deposit",
+},
+{
+    title: "FAQ",
+    id: 5,
     path: "/faq",
 },
 {
+    title: "Our Association",
+    id: 6,
+    path: "/association",
+},
+{
     title: "ContactUs",
-    id: 5,
+    id: 7,
     path: "/contactus"
 }
 ]
@@ -285,6 +295,30 @@ export const getCommitteeInfo = () => {
     )
 }
 
+// Head Teacher
+const headTeacherInfo = [{
+    id: 1,
+    title: "Mr. J.Rami",
+    img: inst7
+}, {
+    id: 2,
+    title: "Mr. Chirag Choksi",
+    img: inst3
+}, {
+    id: 3,
+    title: "Mrs. Sakshi Naik",
+    img: inst2
+},]
+
+// function to get the head teachers
+export const getHeadTeacherInfo = () => {
+    return (
+        headTeacherInfo.map((info) => (
+            <CommitteeCollection key={info.id} title={info.title} img={info.img} />
+        ))
+    )
+}
+
 // Capex Teacher Items
 const iconInfo = [{
     id: 1,
@@ -358,7 +392,12 @@ const footerList = [{
         title: "Contact Us",
         icon: "fa-link",
         link: "/contactus"
-    },
+    }, {
+        id: 5,
+        title: "Disclaimer",
+        icon: "fa-link",
+        link: "/disclaimer"
+    }
     ]
 }, {
     id: 2,
@@ -408,9 +447,9 @@ export const getFooterList = () => {
 export const getContactIcons = () => {
     return (
         iconCollection.map((icon) => (
-            <div key={icon.id} className="flex items-center  text-2xl ">
+            <div key={icon.id} className="flex items-center  mb-4 text-2xl ">
                 <i className={`fas ${icon.icon} mr-3 p-3 bg-yellow-400 rounded-lg text-white shadow-md text-center`}></i>
-                <p className='text-3xl font-bold font-sans text-blue-500'>{icon.title}</p>
+                <p className='text-2xl sm:text-3xl  font-bold font-sans text-blue-500'>{icon.title}</p>
             </div>
         ))
     )
@@ -627,6 +666,31 @@ export const getTermsAndCondition = () => {
     return (
         termsConditionCollection.map((terms) => (
             <TermsConditionComponent key={terms.id} {...terms} />
+        ))
+    )
+}
+
+// grievance 
+const grievanceHandlersCollections = [{
+    id: 1,
+    title: "Dr. Madhuri Raval",
+    handle: "Region Head Eduren"
+},
+{
+    id: 2,
+    title: "Dr. Sushi Naik",
+    handle: "Recruitment and Teacher Training"
+}, {
+    id: 3,
+    title: "Dr. Himanshu Patel",
+    handle: "Legal"
+},
+]
+// grievance function to get the collection
+export const getGrievanceHandler = () => {
+    return (
+        grievanceHandlersCollections.map((items) => (
+            <p className='mt-3 font-semibold text-yellow-600 text-xl'>{items.id}. {items.title} : {items.handle}</p>
         ))
     )
 }

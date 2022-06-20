@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import WOW from 'wowjs';
 import AboutImg from '../assets/images/about.jpg'
 import AboutReusable from './AboutReusable';
-const About = () => {
+const About = ({ img, flag = true }) => {
     useEffect(() => {
         new WOW.WOW({
             boxClass: 'wow',
@@ -15,7 +15,7 @@ const About = () => {
     return (
         <div className='mt-[100px] flex items-center flex-wrap justify-center'>
             <div className='flex flex-wrap p-2 justify-evenly items-center'>
-                {<AboutReusable img={AboutImg} />}
+                {<AboutReusable img={img ? img : AboutImg} flag={flag} />}
                 <div className="yl-about-text-area-content wow fadeInRight  ml-10 sm:w-[700px]" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div className="yl-section-title yl-headline">
                         <span>About Us</span>

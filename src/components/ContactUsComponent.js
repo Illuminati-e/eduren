@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { getContactIcons } from './allData';
+import { getContactIcons, getGrievanceHandler } from './allData';
 import InputFields from './InputFields';
 import emailjs from 'emailjs-com'
 const ContactUsComponent = () => {
@@ -10,14 +10,12 @@ const ContactUsComponent = () => {
     phone: "",
     msg: "",
   })
-  const [contactStore, setContactStore] = useState([]);
   const handleChanges = (e) => {
     const { name, value } = e.target;
     setContact((prev) => ({ ...prev, [name]: value }));
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setContactStore((prev) => [...prev, contact]);
     // email js for sending the email to us.
     emailjs.sendForm('service_b940hi9', 'template_3dvtebt', form.current, 'gq4nwM8TH4MMpsFdK')
       .then((result) => {
@@ -63,7 +61,7 @@ const ContactUsComponent = () => {
   return (
     <>
       <h1 className="text-center mt-10 text-5xl  font-semibold font-sans">Contact Us</h1>
-      <div className='flex justify-evenly mt-10 flex-wrap gap-3 p-3'>
+      <div className='flex justify-evenly mt-10  flex-wrap gap-3 p-3'>
         <div className='flex flex-col flex-wrap'>
           <h1 className='text-3xl text-blue-500 font-sans font-bold text-center md:text-left'>Write us a message</h1>
           <form ref={form} onSubmit={handleSubmit} className='mt-5 p-5 rounded-md shadow-lg bg-yellow-300 shadow-yellow-500/40   flex flex-col gap-3'>
@@ -79,8 +77,10 @@ const ContactUsComponent = () => {
             </svg> </button>
           </form>
         </div>
-        <div className="hidden flex-col p-3 gap-4 lg:mt-0 mt-5 md:flex  justify-center">
+        <div className="flex-col  mt-10 md:flex justify-start ">
+          <h1 className='text-yellow-400 text-center font-bold mb-5 text-3xl sm:text-4xl font-sans'>In the case of any grievance</h1>
           {getContactIcons()}
+          {getGrievanceHandler()}
         </div>
       </div>
       {/* map */}

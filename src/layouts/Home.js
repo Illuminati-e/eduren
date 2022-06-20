@@ -4,6 +4,7 @@ import CapexTeacherAbout from "../components/CapexTeacherAbout";
 import Committee from "../components/Committee";
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
+import HeadTeachers from "../components/HeadTeachers";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products";
 import Sliders from "../components/Sliders";
@@ -19,6 +20,7 @@ const Home = () => {
 			<About />
 			<Products />
 			<Committee />
+			<HeadTeachers/>
 			<CapexTeacherAbout />
 			<Footer />
 		</>

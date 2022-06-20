@@ -6,6 +6,10 @@ import ContactUs from './layouts/ContactUs'
 import CapexTeacher from "./layouts/CapexTeacher";
 import Aboutus from "./layouts/Aboutus";
 import TermsandConditions from "./layouts/TermsandConditions";
+import Error404 from './components/Error404'
+import FeesDeposit from './layouts/FeesDeposit'
+import Disclaimer from './layouts/Disclaimer'
+import OurAssociations from './layouts/OurAssociations'
 const App = () => {
   return (
     <Routes>
@@ -15,6 +19,10 @@ const App = () => {
       <Route exact path='/about' element={<Aboutus />} />
       <Route exact path='/capexteacher' element={<CapexTeacher />} />
       <Route exact path='/termsandconditions' element={<TermsandConditions />} />
+      <Route exact path='/deposit' element={<FeesDeposit />} />
+      <Route exact path='/disclaimer' element={<Disclaimer />} />
+      <Route exact path='//association' element={<OurAssociations />} />
+      <Route path='*' element={<Error404 />} />
     </Routes>
   )
 }
