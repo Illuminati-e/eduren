@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "../components/About";
 import CapexTeacherAbout from "../components/CapexTeacherAbout";
 import Committee from "../components/Committee";
@@ -11,6 +11,9 @@ import Sliders from "../components/Sliders";
 import SubNavbar from "../components/SubNavbar";
 
 const Home = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 	return (
 		<>
 			<Navbar />
@@ -20,7 +23,7 @@ const Home = () => {
 			<About />
 			<Products />
 			<Committee />
-			<HeadTeachers/>
+			<HeadTeachers />
 			<CapexTeacherAbout />
 			<Footer />
 		</>

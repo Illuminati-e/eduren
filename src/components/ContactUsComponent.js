@@ -85,7 +85,7 @@ const ContactUsComponent = () => {
       </div>
       {/* map */}
       <div className='flex mt-28'>
-        <iframe title='google map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.915884647191!2d72.52209801481632!3d23.026860484950973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85225657f1f1%3A0x6a25eb4793de50f!2sThe%20Pioneer%20Tech%20-%20Website%20and%20Application%20Development%20Company%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1655455179549!5m2!1sen!2sin" className='border-0 w-full h-[400px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title='google map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.915884647191!2d72.52209801481632!3d23.026860484950973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85225657f1f1%3A0x6a25eb4793de50f!2sThe%20Pioneer%20Tech%20-%20Website%20and%20Application%20Development%20Company%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1655455179549!5m2!1sen!2sin" className='border-0 w-full h-[400px]' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </>
   )

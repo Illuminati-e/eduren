@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const SliderCollection = ({ img, title, subtitle, description }) => {
     return (
-        <div className="slider-main-item relative">
+        <div className="slider-main-item relative item">
             <div className="slider-main-img img-zooming bg-cover" style={{ backgroundImage: `url(${img})` }}></div>
             <div className="slider-overlay"></div>
             <div className="sm:ml-20 ml-auto  mr-auto pl-[15px] pr-[15px] w-full">
@@ -12,8 +12,8 @@ const SliderCollection = ({ img, title, subtitle, description }) => {
                     </h1>
                     <p>{description}</p>
                     <div className="slider-main-btn">
-                        <a href="#"><i className="fas fa-user"></i> About us</a>
-                        <a href="#"><i className="fas fa-cog"></i> Courses</a>
+                        <Link to="/about"><i className="fas fa-user"></i> About us</Link>
+                        <Link to="/capexteacher"><i className="fas fa-atom"></i> Products</Link>
                     </div>
                 </div>
             </div>

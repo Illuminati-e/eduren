@@ -9,7 +9,7 @@ const About = ({ img, flag = true }) => {
             animateClass: 'animated',
             offset: 0,
             mobile: true,
-            live: true
+            live: false
         }).init();
     }, [])
     return (

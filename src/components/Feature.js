@@ -9,12 +9,12 @@ const Feature = () => {
             animateClass: 'animated',
             offset: 0,
             mobile: true,
-            live: true
+            live: false
         }).init();
     }, [])
 
     return (
-        <div className='flex mt-[100px] items-center flex-wrap justify-evenly wow fadeInUp' data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div className='flex mt-[100px] gap-2 items-center flex-wrap justify-evenly wow fadeInUp' data-wow-delay="0ms" data-wow-duration="1500ms">
             {getFeatureList()}
         </div>
     )

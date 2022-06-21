@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Brand from '../assets/images/logo2.svg'
 import { getFooterList } from './allData'
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
                     <p className='text-white mt-[20px] pb-[35px] text-lg'>
                         We are Eduren Academic private limited company, formed by renewed educationalists.
                     </p>
-                    <a href='#' className='footer-logo-btn shadow-lg text-center uppercase ' >About Us</a>
+                    <Link to="/about" className='footer-logo-btn shadow-lg text-center uppercase ' >About Us</Link>
                 </div>
 
                 {

@@ -11,7 +11,7 @@ const MobileDropDown = ({ title, Links = [], path }) => {
         })
     })
     return (
-        <div className='flex items-center flex-col overflow-hidden relative'>
+        <div className='flex items-center flex-col w-full overflow-hidden relative'>
             <div className='cursor-pointer mt-10 w-full flex ml-20 item-center text-gray-900 space-x-3' onClick={() => setDrop((prev) => !prev)}>
                 <Link to={`${path}`} className='text-2xl font-semibold underline'>{title}</Link>
                 {Links.length !== 0 && (<FaAngleDown className='text-2xl mt-auto' />)}

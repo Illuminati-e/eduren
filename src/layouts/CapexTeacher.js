@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CapexTeacherAbout from "../components/CapexTeacherAbout";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -8,6 +8,9 @@ import SubNavbar from "../components/SubNavbar";
 import CapexTeacherBannerOne from '../assets/images/capexTeacherBannerOne.jpg'
 import CapexTeacherBannerTwo from '../assets/images/capexTeacherBannerTwo.jpg'
 const CapexTeacher = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 	return (
 		<>
 			<Navbar />

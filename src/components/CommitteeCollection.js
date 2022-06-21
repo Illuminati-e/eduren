@@ -8,11 +8,11 @@ const CommitteeCollection = ({ title, img }) => {
 			animateClass: 'animated',
 			offset: 0,
 			mobile: true,
-			live: true
+			live: false
 		}).init();
 	}, [])
 	return (
-		<div className="yl-instructor-img-text text-center position-relative wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+		<div className="yl-instructor-img-text text-center position-relative wow fadeInUp item" data-wow-delay="100ms" data-wow-duration="1500ms">
 			<div className="yl-instructor-img position-relative">
 				<img src={img} alt="Committee Icons" />
 			</div>

@@ -3,7 +3,7 @@ import React from 'react'
 const FeaturesList = ({ icon, title, description }) => {
     return (
 
-        <div className='yl-feature-innerbox flex relative w-[400px]'>
+        <div className='yl-feature-innerbox flex relative max-w-[400px]'>
             <div className='yl-feature-icon'>
                 <i className={`${icon}`}></i>
             </div>

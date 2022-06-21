@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubNavbar from '../components/SubNavbar'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const FeesDeposit = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             <Navbar />

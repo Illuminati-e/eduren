@@ -1,10 +1,11 @@
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { getProduct } from './allData'
+import { Link } from 'react-router-dom'
 const Products = () => {
     return (
-        <div className='flex flex-col mt-[100px] p-3 sm:p-[100px] yl-department-section'>
-            <div className='yl-section-title yl-headline w-[500px] mb-10'>
+        <div className='flex flex-col mt-[100px]  p-3 sm:p-[100px] yl-department-section overflow-hidden'>
+            <div className='yl-section-title sm:ml-0 ml-4 yl-headline w-[500px] mb-10'>
                 <span>
                     Our Products
                 </span>
@@ -45,7 +46,7 @@ const Products = () => {
                 </OwlCarousel>
             </div>
             <div className='yl-department-btn text-center'>
-                <a href="">All Products <i className='fas fa-chevron-right'></i></a>
+                <Link to="/capexteacher">All Products <i className='fas fa-chevron-right'></i></Link>
             </div>
         </div>
     )

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const ProductsCollection = ({ title, subtitle, img, icon }) => {
+const ProductsCollection = ({ title, subtitle, img, icon, link }) => {
     return (
-        <div className="yl-department-innerbox relative">
+        <div className="yl-department-innerbox relative item">
             <div className="yl-department-img">
                 <img src={img} alt="Products Icon" />
             </div>
@@ -11,7 +12,7 @@ const ProductsCollection = ({ title, subtitle, img, icon }) => {
                     <i className={`${icon}`}></i>
                 </div>
                 <div className="yl-department-text yl-headline">
-                    <h3><a href="#">{title}</a></h3>
+                    <h3><Link to={`${link}`}>{title}</Link></h3>
                     <span>{subtitle}</span>
                 </div>
             </div>
@@ -20,12 +21,12 @@ const ProductsCollection = ({ title, subtitle, img, icon }) => {
                     <i className={`${icon}`}></i>
                 </div>
                 <div className="yl-department-text yl-headline">
-                    <h3><a href="#">{title}</a></h3>
+                    <h3><Link to={`${link}`}>{title}</Link></h3>
                     <span>{subtitle}</span>
                 </div>
             </div>
             <div className="yl-department-more-btn">
-                <a href="#"><i className="flaticon-arrow"></i></a>
+                <Link to={`${link}`}><i className="flaticon-arrow"></i></Link>
             </div>
         </div>
     )

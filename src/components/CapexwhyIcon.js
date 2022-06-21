@@ -6,7 +6,7 @@ const CapexwhyIcon = ({ description }) => {
 			<div className="flex items-center text-2xl bg-[#ffa626] rounded-full text-white h-[50px] justify-center mr-4 w-[50px]">
 				<i className="flaticon-graduation-cap"></i>
 			</div>
-			<div>
+			<div className="flex-shrink-[4]">
 				<p className="capitalize ">{description}</p>
 			</div>
 		</div>

@@ -225,32 +225,36 @@ const productInfo = [{
     title: "Capex Teacher",
     subtitle: "Home tutor",
     icon: "flaticon-pencil",
-    img: CapexTeacher
+    img: CapexTeacher,
+    link: "/capexteacher"
 }, {
     id: 2,
     title: "VR Tech",
     subtitle: "Virtual Reality Device",
     icon: "flaticon-business-presentation",
     img: VRtech,
+    link: "/vrtech"
 }, {
     id: 3,
     title: "Capex EduCounsellor",
     subtitle: "To know and decide learning style and learning habits of the child",
     icon: "flaticon-graduation-cap",
-    img: CapexEduc
+    img: CapexEduc,
+    link: "/capexeducounsellor"
 }, {
     id: 4,
     title: "Audio Visual Learning",
     subtitle: "To know and decide learning style and learning habits of the child",
     icon: "flaticon-pencil",
-    img: AudioLearn
+    img: AudioLearn,
+    link: "/audiovisuallearning"
 }]
 
 // Function to get product items
 export const getProduct = () => {
     return (
         productInfo.map((product) => (
-            <ProductsCollection key={product.id} icon={product.icon} img={product.img} subtitle={product.subtitle} title={product.title} />
+            <ProductsCollection key={product.id} icon={product.icon} img={product.img} subtitle={product.subtitle} title={product.title} link={product.link} />
         ))
     )
 }
@@ -460,41 +464,53 @@ export const getContactIcons = () => {
 //FAQ Data
 const faqData = [
     {
+        id: 1,
         title: '1) Is the Teacher who will come to tach my child at Home, is Experienced ?',
         content: 'Of course. We select teacher after proper verification and  interview. Only experienced teachers are sent to teach at Home.',
     },
     {
+        id: 2,
         title: '2) What are the other benefits if we get capax Teacher @ Home ?',
         content: ' Parents will get Mentor  & Head Teacher along with Home Tutor. Online webinar of our counsellor will also help the child.',
     }, {
+        id: 3,
         title: '3) What is  the Role of the Mentor ?',
         content: 'Mentor will Track the progress of the child and regularly communicate with Parent, Student and Teacher.',
     }, {
+        id: 4,
         title: '4) What are the student welfare Webinar and Seminars about ?',
         content: 'It’s a Value added services for students overall development.',
     }, {
+        id: 5,
         title: '5) What to do if Home Tutor ? Teacher is not coming regularly at Home ?',
         content: 'company track the regularity and punctuality of the Teacher. In any such situation company may provide equally capable teacher.',
     }, {
+        id: 6,
         title: '6) How can my child compete with other students ?',
         content: ' If students and Parents demand we can conduct Common Test for all students registered.',
     }, {
+        id: 7,
         title: '7) What will be the Test and Exam schedule ? ',
         content: 'Teacher is responsible to take weekly Test of your child.',
     }, {
+        id: 8,
         title: '8) How can Parents come to know about their child’s Progress ?',
         content: 'Our Mentor talk with Parents to inform them. Along with this A Record Card is also at Parents Home which is regularly signed by Teacher and Parent or Gardian.',
     }, {
+        id: 9,
         title: '9) How can we communicate with Teacher and Mentor ?',
         content: 'A common WhatsApp group will generated for easy and transparent communication.',
     }, {
+        id: 10,
         title: '10) When Parents need to pay the Fees ? ',
         content: ' Fees is to be paid Online only into Company’s current account , that is 60 % fees after Three lectures taken by the Teacher.  Remaining 40 % will according to schedule given by company.',
     }, {
+        id: 11,
         title: '11) What is the Refund policy ?',
         content: 'If Parents are not convenient with the  Home teaching service, Fees will be Refunded in parents account after deduction. Such Deduction includes Teachers salary and company’s operation charges.',
     },
     {
+        id: 12,
         title: '12) What if due to any reason like students sickness or any social activity we could not get teaching service for some time ?',
         content: ' We  might try to compensate the lectures by arranging extra timings but it will strictly as par Teachers convenience , No provision of reducing Fees once decided.',
     },
@@ -505,8 +521,8 @@ const faqData = [
 //FAQ function
 export const getFaqData = () => {
     return (
-        faqData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
+        faqData.map((item) => (
+            <Accordion title={item.title} key={item.id} content={item.content} />
         ))
 
     )
@@ -690,7 +706,7 @@ const grievanceHandlersCollections = [{
 export const getGrievanceHandler = () => {
     return (
         grievanceHandlersCollections.map((items) => (
-            <p className='mt-3 font-semibold text-yellow-600 text-xl'>{items.id}. {items.title} : {items.handle}</p>
+            <p key={items.id} className='mt-3 font-semibold text-yellow-600 text-xl'>{items.id}. {items.title} : {items.handle}</p>
         ))
     )
 }

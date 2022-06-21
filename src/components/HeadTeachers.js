@@ -3,11 +3,11 @@ import { getHeadTeacherInfo } from './allData'
 import OwlCarousel from 'react-owl-carousel'
 const HeadTeachers = () => {
     return (
-        <div className='flex flex-col  p-3 sm:p-[100px] yl-department-section'>
-            <div className='yl-section-title yl-headline w-[500px] mb-10'>
+        <div className='flex flex-col  p-3 sm:p-[100px] yl-department-section overflow-hidden'>
+            <div className='yl-section-title sm:ml-0 ml-4 yl-headline w-[500px] mb-10'>
                 <h2>Head Teachers</h2>
             </div>
-            <div className='w-full flex justify-center'>
+            <div className='w-full flex justify-center '>
 
                 <OwlCarousel margin={30} responsiveClass={true} nav={true} dots={false} navText={["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"]}
                     loop={true}
