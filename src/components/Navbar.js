@@ -3,7 +3,12 @@ import EduRenLogo from '../assets/images/EduRen.svg'
 import EduRenMobileLogo from '../assets/images/logo2.svg'
 import { getMainNavItems, getMobileDropDown } from './allData';
 import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate("/");
+    }
     const [Top, setTop] = useState(false);
     const [toggle, setToggle] = useState(false);
 
@@ -30,10 +35,10 @@ const Navbar = () => {
     return (
         <>
             <div className='up'>
-                <a href="#" style={Top ? { display: "block" } : { display: "none" }} className='scrollup text-center'><i className='fas fa-chevron-up'></i></a>
+                <a href='#' style={Top ? { display: "block" } : { display: "none" }} className='scrollup text-center'><i className='fas fa-chevron-up'></i></a>
             </div>
             <div className='flex flex-wrap md:items-center justify-between  lg:justify-evenly p-4 relative top-0  bg-white shadow border border-[#dadada] overflow-x-hidden'>
-                <img className='w-[200px]' src={EduRenLogo} alt="EduRenLogo" />
+                <img className='w-[200px] cursor-pointer' src={EduRenLogo} alt="EduRenLogo" onClick={handleNavigate} />
                 <div className='lg:hidden text-yellow-500 cursor-pointer' onClick={menuAction}>
                     {/* menu bars */}
                     {

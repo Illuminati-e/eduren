@@ -63,22 +63,22 @@ const ContactUsComponent = () => {
       <h1 className="text-center mt-10 text-5xl  font-semibold font-sans">Contact Us</h1>
       <div className='flex justify-evenly mt-10  flex-wrap gap-3 p-3'>
         <div className='flex flex-col flex-wrap'>
-          <h1 className='text-3xl text-blue-500 font-sans font-bold text-center md:text-left'>Write us a message</h1>
-          <form ref={form} onSubmit={handleSubmit} className='mt-5 p-5 rounded-md shadow-lg bg-yellow-300 shadow-yellow-500/40   flex flex-col gap-3'>
+          <h1 className='text-4xl text-blue-600 font-sans font-bold text-center md:text-left'>Write us a message</h1>
+          <form ref={form} onSubmit={handleSubmit} className='mt-5 p-5 rounded-md shadow-lg bg-white flex flex-col gap-3'>
             <div className='flex gap-3 justify-evenly flex-wrap'>
               {getInputFields()
               }
             </div>
             <div className='flex mt-4'>
-              <textarea name="msg" value={contact.msg} id="" col="" rows="10" className='font-semibold shadow-md placeholder:font-normal w-full p-4 bg-slate-100 rounded-sm text-lg' placeholder='Write your message here ' required resize="off" onChange={handleChanges}></textarea>
+              <textarea name="msg" value={contact.msg} id="" col="" rows="10" className='font-semibold shadow-md placeholder:font-normal w-full p-4 bg-slate-100 rounded-lg text-lg' placeholder='Write your message here ' required resize="off" onChange={handleChanges}></textarea>
             </div>
-            <button className='w-full flex justify-center items-center font-semibold text-white bg-blue-500 rounded-md shadow-md shadow-blue-500/60 p-3 text-xl hover:bg-white hover:shadow-white hover:text-blue-500'>Submit <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <button className='w-[150px] flex justify-center items-center font-semibold text-white bg-blue-500 rounded-md shadow-md shadow-blue-500/60 p-3 text-xl hover:bg-white hover:shadow-white hover:text-blue-500'>Submit <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg> </button>
           </form>
         </div>
         <div className="flex-col  mt-10 md:flex justify-start ">
-          <h1 className='text-yellow-400 text-center font-bold mb-5 text-3xl sm:text-4xl font-sans'>In the case of any grievance</h1>
+          <h1 className='text-yellow-600 text-center font-bold mb-5 text-3xl sm:text-4xl font-sans'>In the case of any grievance</h1>
           {getContactIcons()}
           {getGrievanceHandler()}
         </div>

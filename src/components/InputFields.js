@@ -7,7 +7,7 @@ const InputFields = ({ value, name, type, placeholder, handleChanges }) => {
     return (
         <>
 
-            <input type={type} value={value} name={name} className='p-4 bg-slate-100 rounded-sm text-lg font-semibold placeholder:font-normal shadow-md text-blue-500 flex-1' placeholder={placeholder} required onChange={handler} />
+            <input type={type} value={value} name={name} className='p-4 bg-slate-100 rounded-lg text-lg font-semibold placeholder:font-normal shadow-md text-blue-500 flex-1' placeholder={placeholder} required onChange={handler} />
 
         </>
     )

@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/rushayb6/public_html/eduren_new
+    - /bin/cp * $DEPLOYPATH
