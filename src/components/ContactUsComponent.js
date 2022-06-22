@@ -72,13 +72,13 @@ const ContactUsComponent = () => {
             <div className='flex mt-4'>
               <textarea name="msg" value={contact.msg} id="" col="" rows="10" className='font-semibold shadow-md placeholder:font-normal w-full p-4 bg-slate-100 rounded-lg text-lg' placeholder='Write your message here ' required resize="off" onChange={handleChanges}></textarea>
             </div>
-            <button className='w-[150px] flex justify-center items-center font-semibold text-white bg-blue-500 rounded-md shadow-md shadow-blue-500/60 p-3 text-xl hover:bg-white hover:shadow-white hover:text-blue-500'>Submit <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <button className='w-[150px] flex justify-center items-center font-semibold text-white bg-blue-500 rounded-md shadow-md shadow-blue-500/60 p-3 text-xl hover:bg-white hover:shadow-white hover:text-blue-500 transition-all hover:border-2 hover:border-gray-800 duration-100 ease-in'>Submit <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg> </button>
           </form>
         </div>
         <div className="flex-col  mt-10 md:flex justify-start ">
-          <h1 className='text-yellow-600 text-center font-bold mb-5 text-3xl sm:text-4xl font-sans'>In the case of any grievance</h1>
+          <h1 className='text-gray-700 text-center font-bold mb-5 text-3xl sm:text-4xl font-sans'>In the case of any grievance</h1>
           {getContactIcons()}
           {getGrievanceHandler()}
         </div>

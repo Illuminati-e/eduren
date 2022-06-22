@@ -706,7 +706,7 @@ const grievanceHandlersCollections = [{
 export const getGrievanceHandler = () => {
     return (
         grievanceHandlersCollections.map((items) => (
-            <p key={items.id} className='mt-3 font-semibold text-yellow-600 text-xl'>{items.id}. {items.title} : {items.handle}</p>
+            <p key={items.id} className='mt-3 font-semibold text-gray-700 text-xl ml-0 lg:ml-4'> {items.title} : {items.handle}</p>
         ))
     )
 }
